@@ -4,13 +4,10 @@
 from bs4 import BeautifulSoup
 import logging
 import requests
-import urllib
 import pprint
-import datetime
 import random
 import re
 import os
-import pickle
 
 pp = pprint.PrettyPrinter(indent=4)
 
