@@ -110,7 +110,7 @@ def download_songs(item):
             if not re.search(regex, str(link)):
                 link = 'https:' + link
             filename = os.path.basename(urlparse(link).path)
-        if not size:
+        if not 'size' in locals():
             size = 0
         save = str(item['id']) + ';' + item['title'] + ';' + str(size) + ';' + link
         os.mkdir('songs/' + str(item['id']))
